@@ -10,7 +10,7 @@ class EntityManager
      */
     private $db;
 
-    private function db()
+    protected function db()
     {
         if (null === $this->db) {
             $this->db = new \PDO('mysql:dbname=test;host=127.0.0.1;', 'root', '');
