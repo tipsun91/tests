@@ -103,9 +103,7 @@ class CommentController extends Controller
 			exit();
 		}
 
-		if (isset($_POST['text']) && $_POST['text']) {
-			$model->delete($entity);
-		}
+		$model->delete($entity);
 
 		header('Location: /comment/list');
 		exit();
